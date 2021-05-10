@@ -11,6 +11,8 @@
 		E5781D20264955BC006459DE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5781D1F264955BC006459DE /* ContentView.swift */; };
 		E5781D22264955BD006459DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5781D21264955BD006459DE /* Assets.xcassets */; };
 		E5781D25264955BD006459DE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5781D24264955BD006459DE /* Preview Assets.xcassets */; };
+		E5781D2E264955F4006459DE /* Lens.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5781D2C264955F4006459DE /* Lens.swift */; };
+		E5781D2F264955F4006459DE /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5781D2D264955F4006459DE /* Operators.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		E5781D21264955BD006459DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E5781D24264955BD006459DE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E5781D26264955BD006459DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5781D2C264955F4006459DE /* Lens.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lens.swift; sourceTree = "<group>"; };
+		E5781D2D264955F4006459DE /* Operators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +56,8 @@
 		E5781D1C264955BC006459DE /* SlowTypeCheckLens */ = {
 			isa = PBXGroup;
 			children = (
+				E5781D2C264955F4006459DE /* Lens.swift */,
+				E5781D2D264955F4006459DE /* Operators.swift */,
 				E5781D1D264955BC006459DE /* SlowTypeCheckLensApp.swift */,
 				E5781D1F264955BC006459DE /* ContentView.swift */,
 				E5781D21264955BD006459DE /* Assets.xcassets */,
@@ -139,7 +145,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E5781D20264955BC006459DE /* ContentView.swift in Sources */,
+				E5781D2F264955F4006459DE /* Operators.swift in Sources */,
 				E5781D1E264955BC006459DE /* SlowTypeCheckLensApp.swift in Sources */,
+				E5781D2E264955F4006459DE /* Lens.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,6 +284,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_SWIFT_FLAGS = "-Xfrontend -warn-long-expression-type-checking=10";
 				PRODUCT_BUNDLE_IDENTIFIER = id.jeffersonsetiawan.SlowTypeCheckLens;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -297,6 +306,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_SWIFT_FLAGS = "-Xfrontend -warn-long-expression-type-checking=10";
 				PRODUCT_BUNDLE_IDENTIFIER = id.jeffersonsetiawan.SlowTypeCheckLens;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
